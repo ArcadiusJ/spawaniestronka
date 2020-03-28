@@ -120,9 +120,8 @@ display: block;
   }
 
   .list-group-item {
-      color: white;
-      background-color: #f4534e;
-      ;
+      color: black;
+      background-color: white;
   }
 
   .list-group-item-container {
