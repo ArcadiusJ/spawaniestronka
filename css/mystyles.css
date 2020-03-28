@@ -1,6 +1,6 @@
 body{
-    font-family: 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
-    background-color: #1c1c1c;
+    font-family: 'Roboto', 'Open Sans',Arial,Verdana,Helvetica,sans-serif;
+    background-color: #ffffff;
     background-attachment:fixed;
     background-position:center;
     background-size:cover;
@@ -9,7 +9,7 @@ body{
 }
 
 #site {
-    min-width: 950px;
+    min-width: 1200px;
     min-height: 650px;
     position: relative;
     padding-top: 0%;
@@ -57,13 +57,13 @@ p {
 }
 
 .bg-faded {
-  background-color: #2c2c2c;
+  background-color: #000000;
 }
 
 /*  Navigation bar  */
 #mainNav {
-  background-color:#3c3c3c ;
-  font-family:Raleway;
+  background-color:#111111 ;
+  font-family: Roboto, Raleway;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -72,7 +72,11 @@ p {
 }
 
 .nav-link:hover {
-    text-decoration: underline;
+  border-bottom: 2px solid #ffffff
+}
+
+.navbar-items {
+  left: 70%;
 }
 
 .navbar {
@@ -116,8 +120,9 @@ display: block;
   }
 
   .list-group-item {
-      color: black;
-      background-color: #ff7626;
+      color: white;
+      background-color: #f4534e;
+      ;
   }
 
   .list-group-item-container {
@@ -126,8 +131,8 @@ display: block;
   }
 
   .list-group-item:hover {
-      color: #ff7626;
-      background-color: #2c3e50;
+      color: white;
+      background-color: #dd3333;
   }
 
   .karuzela {
@@ -143,14 +148,14 @@ display: block;
     border-radius: 5px;
   }
 
-  .logo{
-    object-fit: contain;
-      margin: 0px;
-      padding: 0px;
-      height: 140px;
+  #logo{
+      position:absolute;
+      height: 5vh;
       width: auto;
       overflow: hidden;
-      margin:-50% 0 -59% 0;
+      left: 20%;
+      vertical-align: auto;
+      
   }
 
   .main-text {
@@ -187,7 +192,7 @@ display: block;
   }
 
   .footer-container {
-    background-color: #3c3c3c;
+    background-color: #111111;
     min-width: 100vh;
   }
 
@@ -196,9 +201,22 @@ display: block;
   }
 
   .kontakt-container {
+    padding: 0%;
     padding-top: 20px;
     padding-bottom: 20px;
     color: #c8d4dd;
+    background-color: #2e2e2e;
+    margin-bottom: 0px;
+  }
+
+  .kontakt-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    place-items: left;
+  }
+  
+  .kontakt-elements {
+    display: grid;
   }
 
   .intro-container {
