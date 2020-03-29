@@ -57,7 +57,7 @@ p {
 }
 
 .bg-faded {
-  background-color: #000000;
+  background-color: #2e2e2e;
 }
 
 /*  Navigation bar  */
@@ -221,7 +221,36 @@ display: block;
   .intro-container {
     color: #c8d4dd;
   }
-  
+
+.categories-container {
+  position: relative;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: left;
+  height: 200px;
+  overflow: hidden;
+}
+
+.text-over-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  opacity: 0.7;
+  width: 300px;
+}
+
+.categories-item {
+  text-align: center;
+}
+
+.categories-image {
+  width: 400px;
+  height: auto;
+}
+
   /* Responsive layout - makes a two column-layout instead of four columns */
   @media screen and (max-width: 800px) {
     .pop { max-width: 100%; height: auto; }
