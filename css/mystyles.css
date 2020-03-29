@@ -251,6 +251,10 @@ display: block;
   height: auto;
 }
 
+.active-link {
+  color: #dd3333!important;
+}
+
   /* Responsive layout - makes a two column-layout instead of four columns */
   @media screen and (max-width: 800px) {
     .pop { max-width: 100%; height: auto; }
