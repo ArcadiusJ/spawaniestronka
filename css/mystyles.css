@@ -214,14 +214,13 @@ display: block;
   margin: auto;
   margin-top: 0px;
   padding: 0px;
-  padding-top: 6%;
+  padding-top: 8%;
   padding-bottom: 3%;
   justify-items: center;
 }
 
-
 .categories-image {
-  width: 390;
+  width: 390px;
   height: auto;
   align-content: center;
   border: 2px outset transparent;
@@ -235,7 +234,20 @@ display: block;
   color: #dd3333!important;
 }
 
-
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+  padding: 10px;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -276,26 +288,18 @@ display: block;
   }
   .pop { width: 50%; height: auto; }
 
-  .map-responsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-}
-  .map-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-}
+  
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .categories-item{
-    width: 280px;
+    width: 200px;
     height: auto;
+  }
+
+  .categories-image {
+    width: 200px;
   }
 
   #logo {
@@ -305,6 +309,15 @@ display: block;
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  .categories-item{
+    width: 250px;
+    height: auto;
+  }
+
+  .categories-image {
+    width: 250px;
+  }
+
   #logo {
     left: 0%;
   }
@@ -312,6 +325,14 @@ display: block;
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .categories-item{
+    width: 330px;
+    height: auto;
+  }
+
+  .categories-image {
+    width: 330px;
+  }
   #logo {
     left: 0%;
   }
@@ -324,6 +345,16 @@ display: block;
     min-height: 600px;
     width: 50vh;
   }
+
+  .categories-item{
+    width: 390px;
+    height: auto;
+  }
+
+  .categories-image {
+    width: 390px;
+  }
+
   #logo {
     left: 10%;
   }
