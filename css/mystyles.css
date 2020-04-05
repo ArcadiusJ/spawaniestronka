@@ -9,13 +9,10 @@ body{
 }
 
 #site {
-    min-width: 1200px;
-    min-height: 650px;
     position: relative;
     padding-top: 0%;
     padding-bottom: 0%;
     z-index: 2;
-    width: 50vh;
     display: block;
     background-color: inherit;
     margin: auto;
@@ -79,9 +76,7 @@ p {
   position: fixed;
   top: 0%;
   width: 100%;
-  overflow: hidden;
-  z-index:3;
-  height: 60px;
+  z-index: 3;
 }
 
 .navbar-item {
@@ -94,23 +89,6 @@ display: block;
   height: 100%;
 }
 
-.karuzela-container {
-    position: relative;
-    background-color: inherit;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-    padding: 0px;
-    padding-top: 7%;
-    padding-bottom: 2%;
-    width: 100%;
-  }
-
-  .lista-realizacji {
-      width: 100%;
-      padding: 1px;
-      color: white;
-  }
 
   .list-group-item {
       color: black;
@@ -126,17 +104,6 @@ display: block;
       color: white;
       background-color: #dd3333;
   }
-
-  .karuzela {
-      position: right;
-      display: flex;
-      padding-right: 0px;
-      width: 600px;
-      padding-top: 2%;
-      margin: auto;
-  }
-
-
 
   .contact-button {
     border: 2px solid white;
@@ -249,7 +216,6 @@ display: block;
   padding: 0px;
   padding-top: 6%;
   padding-bottom: 3%;
-  height: 400px;
   justify-items: center;
 }
 
@@ -269,78 +235,107 @@ display: block;
   color: #dd3333!important;
 }
 
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
-    .pop { max-width: 100%; height: auto; }
-    .logo {
-      visibility: hidden;
-    }
-    .contact-button {
-      border: hidden;
-    }
-    .container {
-      max-width: 100%;
-      height: auto;
-    }
-    .site {
-      width: 100vh;
-    }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
-  /* Media Queries: Tablet Landscape */
-@media screen and (max-width: 1060px) {
-  #primary { width:67%; }
-  #secondary { width:30%; margin-left:3%;}  
-  .pop { max-width: 100%; height: auto; }
-}
 
-/* Media Queries: Tabled Portrait */
-@media screen and (max-width: 768px) {
-  #primary { width:100%; }
-  #secondary { width:100%; margin:0; border:none; }
-  .pop { max-width: 100%; height: auto; }
-  .karuzela {
-    visibility: hidden;
-  }
-  .site {
-    max-width: 100%;
-  }
-}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .pop { max-width: 50%; height: auto; }
-  .site {
+  [class*="column"] {
     width: 100%;
   }
+
+  .categories-container{
+    grid-template-columns: 100%;
+    justify-items: left;
+  }
+
+  .intro-text {
+    text-align: left;
+  }
+
+  .logo {
+    display: none;
+  }
+  .contact-button {
+    border: hidden;
+  }
+  .container {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .kontakt-grid {
+    grid-template-columns: 100%;
+  }
+
+  .navbar {
+    max-width: 100%;
+  }
+  .pop { width: 50%; height: auto; }
+
+  .map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+  .map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .pop { max-width: 50%; height: auto; }
-  .site {
-    width: 100vh;
+  .categories-item{
+    width: 280px;
+    height: auto;
+  }
+
+  #logo {
+    left: 5%;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .pop { max-width: 100%; height: auto; }
+  #logo {
+    left: 0%;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
+  #logo {
+    left: 0%;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  #site {
+    min-width: 1200px;
+    min-height: 600px;
+    width: 50vh;
+  }
+  #logo {
+    left: 10%;
+  }
+}
 
+@media only screen and (min-width: 1400px) {
+  #site {
+    min-width: 1200px;
+    min-height: 600px;
+    width: 50vh;
+  }
+  #logo {
+    left: 19%;
+  }
 }
